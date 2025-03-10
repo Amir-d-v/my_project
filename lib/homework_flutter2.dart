@@ -282,6 +282,12 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
+        floatingActionButton: FloatingActionButton(
+            child: Icon(
+              Icons.bookmark_border,
+              color: Colors.purple,
+            ),
+            onPressed: () {}),
       ),
     );
   }
