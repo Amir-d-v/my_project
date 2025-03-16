@@ -27,11 +27,12 @@ class _CounterScreenState extends State<CounterScreen> {
   int _counter = 0;
   Color outsideColor = Colors.purple;
   double _textSize = 18;
+  final random = Random();
 
   final List<Color> colorsList = [
+    Colors.purple,
     Colors.blue,
     Colors.orange,
-    Colors.purple,
   ];
 
   void _incrementCounter() {
@@ -41,7 +42,6 @@ class _CounterScreenState extends State<CounterScreen> {
   }
 
   void _changeColor() {
-    final random = Random();
     setState(() {
       outsideColor = colorsList[random.nextInt(colorsList.length)];
     });
@@ -60,7 +60,7 @@ class _CounterScreenState extends State<CounterScreen> {
         title: const Align(
           alignment: Alignment.topLeft,
           child: Text(
-            "Interactive Ui Demo",
+            "Interactive UI Demo",
             style: TextStyle(color: Colors.white),
           ),
         ),
