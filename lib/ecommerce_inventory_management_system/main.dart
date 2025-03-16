@@ -43,9 +43,9 @@ void main() {
 
   print("Total Value: \$${inventory.products.totalValue.toStringAsFixed(2)}");
   print(
-      "Electronics: ${inventory.products.byCategory("Electronics").map((p) => p.name).join(", ")}");
+      "Electronics: ${inventory.products.byCategory("Electronics").map((p) => p.name).join(",")}");
   print(
-      "Digital Products: ${inventory.products.digitalProducts.map((p) => p.name).join(", ")}");
+      "Digital Products: ${inventory.products.digitalProducts.map((p) => p.name).join(",")}");
 }
 
 abstract class Product {
